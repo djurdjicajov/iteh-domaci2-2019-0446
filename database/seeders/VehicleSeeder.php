@@ -14,6 +14,5 @@ class VehicleSeeder extends Seeder
      */
     public function run()
     {
-        //
     }
 }

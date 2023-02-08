@@ -17,7 +17,9 @@ class ManufacturerFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name'=>$this->faker->word(),
+        'city'=> $this->faker->city(),
+        'CEO'=> fake()->name(),
         ];
     }
 }
