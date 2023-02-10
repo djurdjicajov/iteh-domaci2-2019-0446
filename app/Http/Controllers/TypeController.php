@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Validator;
 class TypeController extends Controller
 {
     //GET
-    //localhost:8000/api/ypes
+    //localhost:8000/api/types
     
 
     /**

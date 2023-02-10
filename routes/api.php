@@ -26,21 +26,21 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-// Route::get('vehicles', [VehicleController::class, 'index']);
+Route::get('vehicles', [VehicleController::class, 'index']);
 Route::get('vehicles/{id}', [VehicleController::class, 'show']);
 
 // Route::resource('vehicles', VehicleController::class)->only(['index', 'show', 'destroy']);
 
-// Route::get('/Types', [TypeController::class, 'index']);
-// Route::get('/Types/{id}', [TypeController::class, 'show']);
+Route::get('/Types', [TypeController::class, 'index']);
+Route::get('/Types/{id}', [TypeController::class, 'show']);
 
-// Route::post('/Types', [TypeController::class, 'store']);
+Route::post('/Types', [TypeController::class, 'store']);
 
-// Route::resource('Types', TypeController::class)->except('create', 'edit');
+Route::resource('Types', TypeController::class)->except('create', 'edit');
 
-// Route::resource('manufacturers', ManufacturerController::class)->except('create', 'edit');
+Route::resource('manufacturers', ManufacturerController::class)->except('create', 'edit');
 
-// Route::get('Types/{id}/vehicles', [TypeVehicleController::class, 'index'])->name('Types.vehicles.index');
+Route::get('Types/{id}/vehicles', [TypeVehicleController::class, 'index'])->name('Types.vehicles.index');
 
 Route::post('/register', [AuthController::class, 'register']);
 

@@ -10,7 +10,7 @@ class TypeVehicleController extends Controller
 {
     public function index($TypeID)
     {
-        $Vehicles = Vehicle::get()->where('type_id', $TypeID);
+        $vehicles = Vehicle::get()->where('type_id', $TypeID);
         if(is_null($vehicles)) {
             return response()->json('Data not found', 404);
         }
